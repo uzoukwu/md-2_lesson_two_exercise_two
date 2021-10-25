@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">lesson_two_exercise_two</string>
+    <string name="tvHealth">Health</string>
+    <string name="tvSearch">Поиск</string>
+    <string name="tvAppName">центр администрирования Microsoft 365</string>
+    <string name="tvMessageCentre">Центр сообщений</string>
+    <string name="tvMessagesubtext">YW имеют непрочитанные сообщения</string>
+    <string name="tvMessageCentre2">Работоспособность службы</string>
+    <string name="tvQuickLinks">Quick Links</string>
+    <string name="tvMessagesubtext2">Myle имеют новые уведомления</string>
+    <string name="tvMessageCentre3">Оповещений о выставлений счета</string>
+    <string name="tvMessagesubtext3">Yaw ha*.е без новых уведомлений</string>
+    <string name="btUsers">Users</string>
+    <string name="btGroups">Groups</string>
+    <string name="btBilling">Billing</string>
+    <string name="btSettings">Settings</string>
+    <string name="btTheme">Theme</string>
+    <string name="btSupport">Support</string>
+</resources>

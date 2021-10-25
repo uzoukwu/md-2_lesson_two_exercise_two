@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btUsers"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:paddingTop="50dp"
+        android:text="@string/btUsers"
+        android:textAllCaps="false"
+        android:textColor="#333232"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:iconTint="#A9989595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuickLinks"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="#8F8F8F" />
+
+    <ImageView
+        android:id="@+id/ivThemeIcon"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/btTheme"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/btTheme"
+        app:layout_constraintTop_toTopOf="@+id/btTheme"
+        app:srcCompat="@drawable/theme"
+        tools:srcCompat="@drawable/theme" />
+
+    <ImageView
+        android:id="@+id/ivUsersIcon"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/btUsers"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/btUsers"
+        app:layout_constraintTop_toTopOf="@+id/btUsers"
+        app:srcCompat="@drawable/users" />
+
+    <Button
+        android:id="@+id/btGroups2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:paddingTop="50dp"
+        android:text="Groups"
+        android:textAllCaps="false"
+        android:textColor="#4C4B4B"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:iconTint="#A9989595"
+        app:layout_constraintStart_toEndOf="@+id/btUsers"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuickLinks"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="#8F8F8F" />
+
+    <Button
+        android:id="@+id/btSupport"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="50dp"
+        android:text="@string/btSupport"
+        android:textAllCaps="false"
+        android:textColor="#4C4B4B"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:iconTint="#A9989595"
+        app:layout_constraintStart_toEndOf="@+id/btTheme"
+        app:layout_constraintTop_toBottomOf="@+id/btGroups2"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="#8F8F8F" />
+
+    <ImageView
+        android:id="@+id/ivSupportIcon"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/btSupport"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/btSupport"
+        app:layout_constraintTop_toTopOf="@+id/btSupport"
+        app:srcCompat="@drawable/support"
+        tools:srcCompat="@drawable/support" />
+
+    <Button
+        android:id="@+id/btTheme"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="50dp"
+        android:text="@string/btTheme"
+        android:textAllCaps="false"
+        android:textColor="#4C4B4B"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:iconTint="#A9989595"
+        app:layout_constraintStart_toEndOf="@+id/btSettings"
+        app:layout_constraintTop_toBottomOf="@+id/btGroups2"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="#8F8F8F" />
+
+    <Button
+        android:id="@+id/btSettings"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="50dp"
+        android:text="@string/btSettings"
+        android:textAllCaps="false"
+        android:textColor="#4C4B4B"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:iconTint="#A9989595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btGroups2"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="#8F8F8F" />
+
+    <ImageView
+        android:id="@+id/ivGroupsIcon"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/btGroups2"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/btGroups2"
+        app:layout_constraintTop_toTopOf="@+id/btGroups2"
+        app:srcCompat="@drawable/group"
+        tools:srcCompat="@drawable/group" />
+
+    <Button
+        android:id="@+id/btBilling"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="91dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:paddingTop="50dp"
+        android:text="@string/btBilling"
+        android:textAllCaps="false"
+        android:textColor="#4C4B4B"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        app:iconTint="#A9989595"
+        app:layout_constraintStart_toEndOf="@+id/btGroups2"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuickLinks"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="#8F8F8F" />
+
+    <ImageView
+        android:id="@+id/ivBilling"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/btBilling"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/btBilling"
+        app:layout_constraintTop_toTopOf="@+id/btBilling"
+        app:srcCompat="@drawable/bills"
+        tools:srcCompat="@drawable/bills" />
+
+    <ImageView
+        android:id="@+id/ivSettingsIcon"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/btSettings"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/btSettings"
+        app:layout_constraintTop_toTopOf="@+id/btSettings"
+        app:srcCompat="@drawable/settings"
+        tools:srcCompat="@drawable/settings" />
+
+    <ImageView
+        android:id="@+id/ivCardIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:srcCompat="@drawable/card_icon"
+        tools:srcCompat="@drawable/card_icon" />
+
+    <ImageView
+        android:id="@+id/ivClickArrow3"
+        android:layout_width="13dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/tvMessageCentre3"
+        app:layout_constraintTop_toTopOf="@+id/ivCardIcon"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/tvMessagesubtext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tvMessagesubtext3"
+        android:textColor="#151515"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ivCardIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessageCentre3" />
+
+    <TextView
+        android:id="@+id/tvMessageCentre3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/tvMessageCentre3"
+        android:textColor="#151515"
+        app:layout_constraintStart_toEndOf="@+id/ivCardIcon"
+        app:layout_constraintTop_toTopOf="@+id/ivCardIcon" />
+
+    <ImageView
+        android:id="@+id/ivHealthIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/heart_icon"
+        tools:srcCompat="@drawable/heart_icon" />
+
+    <TextView
+        android:id="@+id/tvMessageCentre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/tvMessageCentre2"
+        android:textColor="#151515"
+        app:layout_constraintStart_toEndOf="@+id/ivHealthIcon"
+        app:layout_constraintTop_toTopOf="@+id/ivHealthIcon" />
+
+    <TextView
+        android:id="@+id/tvMessageCentre4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/tvMessageCentre2"
+        android:textColor="#151515"
+        app:layout_constraintStart_toEndOf="@+id/ivHealthIcon"
+        app:layout_constraintTop_toTopOf="@+id/ivHealthIcon" />
+
+    <ImageView
+        android:id="@+id/ivClickArrow2"
+        android:layout_width="13dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/ivNotificationRed"
+        app:layout_constraintTop_toTopOf="@+id/ivHealthIcon"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/tvMessagesubtext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tvMessagesubtext2"
+        android:textColor="#151515"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ivHealthIcon"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessageCentre2" />
+
+    <ImageView
+        android:id="@+id/ivNotificationRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/tvMessageCentre2"
+        app:layout_constraintTop_toTopOf="@+id/ivHealthIcon"
+        app:srcCompat="@drawable/notification_red"
+        tools:srcCompat="@drawable/notification_red" />
+
+    <view
+        android:id="@+id/vTopMenu"
+        class="com.google.android.material.appbar.MaterialToolbar"
+        android:layout_width="457dp"
+        android:layout_height="91dp"
+        android:background="#201F1F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHealth"
+        android:layout_width="412dp"
+        android:layout_height="23dp"
+        android:alpha="0.75"
+        android:background="#D9DCDC"
+        android:paddingStart="10sp"
+        android:paddingTop="2sp"
+        android:text="@string/tvHealth"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vTopMenu" />
+
+    <TextView
+        android:id="@+id/tvQuickLinks"
+        android:layout_width="412dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="24dp"
+        android:alpha="0.75"
+        android:background="#D9DCDC"
+        android:paddingStart="10sp"
+        android:paddingTop="2sp"
+        android:text="@string/tvQuickLinks"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessagesubtext3" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tvAppName"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMessageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHealth"
+        app:srcCompat="@drawable/message_icon" />
+
+    <ImageView
+        android:id="@+id/ivNotificationBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvMessageCentre"
+        app:layout_constraintTop_toTopOf="@+id/ivMessageIcon"
+        app:srcCompat="@drawable/notification_blue" />
+
+    <TextView
+        android:id="@+id/tvMessageCentre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/tvMessageCentre"
+        android:textColor="#151515"
+        app:layout_constraintStart_toEndOf="@+id/ivMessageIcon"
+        app:layout_constraintTop_toTopOf="@+id/ivMessageIcon" />
+
+    <TextView
+        android:id="@+id/tvMessagesubtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tvMessagesubtext"
+        android:textColor="#151515"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/tvMessageCentre"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessageCentre" />
+
+    <ImageView
+        android:id="@+id/ivClickArrow"
+        android:layout_width="13dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/ivNotificationBlue"
+        app:layout_constraintTop_toTopOf="@+id/ivMessageIcon"
+        app:srcCompat="@drawable/arrow" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessagesubtext" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessagesubtext2" />
+
+    <ImageView
+        android:id="@+id/ivIcons"
+        android:layout_width="32dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vTopMenu"
+        app:srcCompat="@drawable/icons" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="389dp"
+        android:layout_height="34dp"
+        android:alpha="0.75"
+        android:background="#97615F5F"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/vTopMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+
+    <SearchView
+        android:id="@+id/ivSearch"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:foreground="?android:attr/actionModeWebSearchDrawable"
+        android:foregroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivIcons" />
+
+    <TextView
+        android:id="@+id/tvSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tvSearch"
+        android:textColor="#FAF9F9"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/ivSearch"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
